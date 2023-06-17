@@ -1,0 +1,37 @@
+/* css for clock hands */
+
+.clock {
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-face {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.hand {
+    width: 50%;
+    height: 0px;
+    position: absolute;   
+    transform-origin: top left;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.min-hand {
+    border-top: 4px solid black;
+    width: 40%;
+}
+
+.sec-hand {
+    border-top: 4px solid red;
+}
